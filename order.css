@@ -1,0 +1,27 @@
+.order-card {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: right;
+}
+
+.order-card button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.order-card button:first-of-type {
+    background: green;
+    color: white;
+}
+
+.order-card button:last-of-type {
+    background: red;
+    color: white;
+}

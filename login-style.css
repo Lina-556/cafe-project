@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
+        url("مشروع/0eb7d5a931ca7ded99d370584ecae013.jpg") center/cover no-repeat;
+}
+
+
+
+/* wrapper */
+.login-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* card */
+.login-card {
+    width: 360px;
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(25px);
+
+    box-shadow: 0 0 40px rgba(255, 180, 71, 0.2);
+
+    text-align: center;
+    color: white;
+
+    animation: fadeIn 0.7s ease;
+}
+
+.login-card h2 {
+    color: white;
+    font-size: 26px;
+}
+
+.login-card p {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+
+/* inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: rgba(0,0,0,0.4);
+    color: white;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    background: rgba(255,255,255,0.1);
+    transform: scale(1.02);
+}
+
+/* button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(135deg, #ffb347, #ff4e50);
+    color: white;
+
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* error */
+#error {
+    margin-top: 10px;
+    color: #ff6b6b;
+    font-size: 14px;
+}
+
+/* animation */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
