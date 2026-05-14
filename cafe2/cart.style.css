@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* الحاوية */
+.app-container {
+    width: 100%;
+    max-width: 420px;
+    background-image: url("مشروع/290a2af0fb9ffaa3e44819bb6610bfda.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    padding-bottom: 90px;
+    min-height: 100vh;
+    z-index: 2;
+}
+
+
+.app-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(3px); /* 🔥 التغبيش */
+    background: rgba(0,0,0,0.2); /* تغميق خفيف */
+    border-radius: 30px;
+    z-index: 0;
+}
+
+.app-container > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* الهيدر */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #6f4e37;
+    color: white;
+}
+
+.back-btn{
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+/* السلة */
+#cartItemsList{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* كرت المنتج */
+.cart-item{
+    background: #fff;
+    border-radius: 18px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* الصورة */
+.cart-img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* التفاصيل */
+.cart-details{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cart-details h4{
+    margin: 0;
+    font-size: 16px;
+    color: #2b1a12;
+}
+
+.cart-details p{
+    margin: 0;
+    color: #6f4e37;
+    font-weight: bold;
+}
+
+.cart-details span{
+    font-size: 13px;
+    color: #555;
+}
+
+/* زر الحذف */
+.delete-btn{
+    background: #7a1f1f;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.delete-btn:hover{
+    transform: scale(1.05);
+}
+
+/* السلة الفارغة */
+.empty-cart{
+    text-align: center;
+    margin-top: 100px;
+    color: #777;
+}
+
+/* المجموع */
+.total-section{
+    position: fixed;
+    bottom: 70px;
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.08);
+}
+
+.total-section h3{
+    margin-bottom: 12px;
+    color: #333;
+}
+
+/* زر الدفع */
+.checkout-btn{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 14px;
+    background: #6f4e37;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* الناف بار */
+.bottom-nav{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 420px;
+    height: 70px;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #ddd;
+}
+
+.bottom-nav a{
+    color: #777;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.bottom-nav a.active{
+    color: #6f4e37;
+}
+
+.cart-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: #fff;
+    padding: 12px;
+    border-radius: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.cart-img{
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.cart-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cart-info h4{
+    margin: 0;
+    font-size: 15px;
+    color: #2b1a12;
+}
+
+.qty{
+    font-size: 13px;
+    color: #555;
+}
+
+.price{
+    color: #6f4e37;
+    font-weight: bold;
+}
+
+/* زر الحذف جنب الكرت */
+.delete-btn{
+    background: #7a1f1f;
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-btn i{
+    font-size: 14px;
+}

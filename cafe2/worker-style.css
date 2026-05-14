@@ -1,0 +1,130 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    color: white;
+
+    background:
+        linear-gradient(rgba(20,12,8,0.7), rgba(0,0,0,0.85)),
+        url("مشروع/0eb7d5a931ca7ded99d370584ecae013.jpg")
+        center/cover no-repeat;
+        display: block; 
+}
+
+h2 {
+    text-align: center;
+    font-size: 34px;
+
+    margin: 20px 0 10px 0;
+}
+
+.orders-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.order-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 18px;
+
+    padding: 20px;
+
+    transition: 0.3s;
+}
+
+.order-card:hover {
+    transform: translateY(-4px);
+}
+
+.order-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.status {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: rgb(255, 173, 67);
+}
+
+.status.done {
+    background: #3dcb65;
+    color: white;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin: 8px 0;
+    padding: 10px;
+
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+}
+
+.item img {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.btn-done {
+    width: 100%;
+    margin-top: 12px;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(135deg, #6fbf73, #31633f);
+
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.btn-delete {
+    width: 100%;
+    margin-top: 10px;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(135deg, #c94b4b, #9a2c2c);
+
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+}
